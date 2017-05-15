@@ -1,0 +1,18 @@
+<h1 class="page-header">{{title}}</h1>
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="item in subjects">
+        <span class="badge">{{item.rating.average}}</span>
+        <div class="media">
+            <a href="#!/subject/{{item.id}}">
+                <div class="media-left">
+                    <img class="media-object" ng-src="{{item.images.small}}" alt="{{item.alt}}">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{item.title}}</h4>
+                    <p>类型：{{item.genres.toString()}}</p>
+                    <p>演员：<span ng-repeat="i in item.casts">{{$last?i.name+'':i.name+','}}</span></p>
+                </div>
+            </a>
+        </div>
+    </li>
+</ul>
