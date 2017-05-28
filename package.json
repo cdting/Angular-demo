@@ -4,9 +4,10 @@
     "description": "Tin angular boilerplate",
     "scripts": {
         "prestart": "npm install",
-        "start": "hs -a localhost -p 1688 -o"
+        "start": "./node_modules/.bin/hs -a localhost -p 1688 -o",
+        "pretest": "npm install",
+        "test": "browser-sync start --server --files 'app/*.css' "
     },
-
     "author": "Tin <memailsg@gmail.com>",
     "license": "ISC",
     "dependencies": {},
@@ -14,6 +15,7 @@
         "angular": "^1.5.0",
         "angular-route": "^1.5.0",
         "bootstrap": "^3.3.6",
+        "gulp": "^3.9.1",
         "http-server": "^0.8.5"
     }
 }

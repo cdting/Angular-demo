@@ -134,7 +134,7 @@ body {
 
 /*加载动画*/
 
-body .load-main {
+.load-main {
     background-color: black;
     float: left;
     z-index: 9990;
