@@ -49,8 +49,10 @@
 
                         $scope.subjects = data.subjects;
 
-
+                        $scope.loaddh = 'load-main-remove';
                         $scope.$apply();
+
+
                     })
             }
         ])
@@ -74,7 +76,7 @@
                         $scope.imgsrc = data.images;
                         $scope.summary = data.summary;
 
-
+                        $scope.loaddh = 'load-main-remove';
 
                         console.log(data);
                         $scope.$apply();

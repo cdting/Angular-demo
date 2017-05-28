@@ -6,7 +6,7 @@
         "prestart": "npm install",
         "start": "./node_modules/.bin/hs -a localhost -p 1688 -o",
         "pretest": "npm install",
-        "test": "browser-sync start --server --files 'app/*.css' "
+        "test": "browser-sync start --server --files 'app/*.css,app/*.html' "
     },
     "author": "Tin <memailsg@gmail.com>",
     "license": "ISC",
@@ -15,7 +15,7 @@
         "angular": "^1.5.0",
         "angular-route": "^1.5.0",
         "bootstrap": "^3.3.6",
-        "gulp": "^3.9.1",
+        "browser-sync": "^2.18.12",
         "http-server": "^0.8.5"
     }
 }

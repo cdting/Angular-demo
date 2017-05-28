@@ -134,16 +134,14 @@ body {
 
 /*加载动画*/
 
-.load-main {
-    background-color: black;
-    float: left;
-    z-index: 9990;
-    height: 900px;
-    width: 900px;
+.load-main-remove {
+    display: none;
 }
 
 .cssload-loader {
+    padding: 59px;
     position: absolute;
+    top: 100%;
     left: 50%;
     width: 47.284271247462px;
     height: 47.284271247462px;
